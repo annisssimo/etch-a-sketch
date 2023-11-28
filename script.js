@@ -37,6 +37,13 @@ changeModeButton.addEventListener('click', () => {
     isClicked = !isClicked;
 });
 
+function clearSquareContainer() {
+    const gridItems = document.querySelectorAll('.inner-square');
+    gridItems.forEach((item) => {
+    item.style.backgroundColor = 'rgb(237, 255, 253)';
+  });
+}
+
 function askUserNumber () {
     const userNumber = prompt('Insert a number of squares per side (should be less than 100): ');
     if (userNumber > 100 || userNumber <= 0 || isNaN(userNumber)) {
