@@ -56,22 +56,39 @@ h1 {
   }
       
   .inner-square {
-    /* height: 30px;
-    width: 30px; */
     background-color: rgb(237, 255, 253);
     border: 0.5px solid rgb(188, 156, 156);
     box-sizing: border-box;
   }
 
-  .my-colour-class {
-    background-color:aqua;
-  }
-
   button {
     padding: 20px 30px;
     border-radius: 30px;
-    background-color: aqua;
+    background-color: rgb(0, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  button:hover {
     box-shadow: 1px 1px 10px 2px rgb(248, 184, 255);
   }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+    #clear-button {
+    background-color: azure;
+    border: 4px double aqua;
+    cursor: pointer;
+    margin-top:50px;
+  }
+
+  input[type="color"] {
+    width: 40px;
+    cursor: pointer;
+}
